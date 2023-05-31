@@ -33,14 +33,22 @@
     }
   }
   &__sidebar {
-    background-color: hsl(300, 100%, 30%);
-
     @include u.breakpoint-down(medium) {
       text-align: center;
     }
 
     @include u.breakpoint-down(small) {
       text-align: right;
+    }
+  }
+  &__widget {
+    $widget: &;
+    background-color: hsl(300, 100%, 30%);
+
+    &--green {
+      @extend #{$widget};
+      // @extend .grid__widget;
+      background-color: hsl(120, 89%, 21%);
     }
   }
 }
