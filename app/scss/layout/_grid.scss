@@ -1,5 +1,9 @@
 @use '../util/' as u;
 
+// %widget {
+//   padding: u.rem(16);
+// }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -42,13 +46,21 @@
     }
   }
   &__widget {
-    $widget: &;
-    background-color: hsl(300, 100%, 30%);
+    // $widget: &;
+    padding: u.rem(16);
+    
+    // &.magenta {
+    //   // @extend %widget;
+    //   // @extend #{$widget};
+    //   // @extend .grid__widget;
+    //   background-color: hsl(300, 100%, 30%);
+    // }
 
-    &--green {
-      @extend #{$widget};
-      // @extend .grid__widget;
-      background-color: hsl(120, 89%, 21%);
-    }
+    // &.green {
+    //   // @extend %widget;
+    //   // @extend #{$widget};
+    //   // @extend .grid__widget;
+    //   background-color: hsl(120, 89%, 21%);
+    // }
   }
 }

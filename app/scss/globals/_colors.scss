@@ -2,3 +2,17 @@
   --background-color: hsl(0, 0%, 11%);
   --text-color: hsl(0, 0%, 100%);
 }
+
+.magenta {
+  // @extend %widget;
+  // @extend #{$widget};
+  // @extend .grid__widget;
+  background-color: hsl(300, 100%, 30%);
+}
+
+.green {
+  // @extend %widget;
+  // @extend #{$widget};
+  // @extend .grid__widget;
+  background-color: hsl(120, 89%, 21%);
+}
